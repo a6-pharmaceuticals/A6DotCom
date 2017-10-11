@@ -9,22 +9,16 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Admin from './Admin';
-
-const title = 'Admin Page';
-const isAdmin = false;
+import Page from '../../components/Page';
+import people from './people.md';
 
 function action() {
-  if (!isAdmin) {
-    return { redirect: '/login' };
-  }
-
   return {
-    chunks: ['admin'],
-    title,
+    chunks: ['about'],
+    title: people.title,
     component: (
       <Layout>
-        <Admin title={title} />
+        <Page {...people} />
       </Layout>
     ),
   };

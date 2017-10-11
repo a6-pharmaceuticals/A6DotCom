@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="155px" height="155px" viewBox="0 0 155 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A6 Logo</title>
+    <defs></defs>
+    <g id="ToExport" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Logo-Copy-2" stroke="#78C06B" stroke-width="7">
+                <rect id="Rectangle-3-Copy-2" x="3.5" y="3.5" width="148" height="148"></rect>
+            </g>
+            <g id="A6" transform="translate(11.000000, 0)" letter-spacing="1.30666661" fill="#326399" font-weight="normal">
+                <text id="A" font-family="Aileron-Regular, Aileron" font-size="120">
+                    <tspan x="1.26640695" y="116">A</tspan>
+                </text>
+                <text id="6-copy-2" font-family="Hind-Regular, Hind" font-size="92">
+                    <tspan x="81.8162511" y="117">6</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
