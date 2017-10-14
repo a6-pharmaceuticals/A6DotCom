@@ -24,12 +24,12 @@ const routes = {
       load: () => import(/* webpackChunkName: 'contact' */ './contact'),
     },
     {
-      path: '/about',
-      load: () => import(/* webpackChunkName: 'about' */ './about'),
-    },
-    {
       path: '/privacy',
       load: () => import(/* webpackChunkName: 'privacy' */ './privacy'),
+    },
+    {
+      path: '/people',
+      load: () => import(/* webpackChunkName: 'people' */ './people'),
     },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)

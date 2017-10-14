@@ -21,12 +21,25 @@
 
 .container {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px;
   max-width: var(--max-content-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand {
   color: color(var(--brand-color) lightness(+10%));
   text-decoration: none;
   font-size: 1.75em; /* ~28px */
+}
+
+.logo {
+  @media only screen and (max-device-width: 480px) {
+    width: 45px;
+  }
+
+  @media only screen and (min-device-width: 481px) {
+    width: 75px;
+  }
 }

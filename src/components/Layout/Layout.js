@@ -7,12 +7,14 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+import Favicon from 'react-favicon';
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
+import faviconUrl from '../../A6-logo@.5x.png';
 import s from './Layout.css';
 import Header from '../Header';
 import Footer from '../Footer';
@@ -25,6 +27,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
+        <Favicon url={faviconUrl} />
         <Header />
         {this.props.children}
         <Footer />

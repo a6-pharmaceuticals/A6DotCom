@@ -1,0 +1,66 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 20px auto 0;
+  padding: 0 0 95px;
+  max-width: var(--max-content-width);
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.subTitle {
+  font-family: 'AileronRegular', sans-serif;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.personContainer {
+  text-align: left;
+}
+
+.personName {
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.advisorName {
+  font-size: 22px;
+}
+
+.personTitle {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.personName,
+.personTitle,
+.advisorName {
+  color: #326399;
+  font-family: 'AileronRegular', sans-serif;
+}
+
+.bodyText {
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1.57px;
+  font-size: 16px;
+}

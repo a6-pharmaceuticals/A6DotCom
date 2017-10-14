@@ -7,6 +7,11 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+/**
+ * TODO: for lack of a better place to put this, we should consolidate color, size,
+ * and other global style variables here after site is up
+ */
+
 :root {
   /*
    * Typography
