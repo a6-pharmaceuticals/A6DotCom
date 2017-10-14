@@ -9,6 +9,7 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.css';
@@ -16,7 +17,7 @@ import Link from '../Link';
 
 class Navigation extends React.Component {
   static propTypes = {
-    pathname: React.PropTypes.string.isRequired,
+    pathname: PropTypes.string.isRequired,
   };
 
   constructor() {
