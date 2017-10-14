@@ -17,7 +17,7 @@ import logoUrl from './A6-logo.svg';
 
 class Header extends React.Component {
   render() {
-    let pathname = null;
+    let pathname = '';
     if (root && root.window && root.window.location) {
       pathname = root.window.location.pathname;
     }
