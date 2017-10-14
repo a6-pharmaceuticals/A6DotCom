@@ -60,6 +60,7 @@ class Navigation extends React.Component {
     };
     const renderLink = (attrs, index) => (
       <Link
+        key={`nav-link-${index}`}
         className={attrs.className}
         to={attrs.href}
         onClick={() => {
