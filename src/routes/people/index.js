@@ -9,16 +9,15 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Page from '../../components/Page';
-import people from './people.md';
+import People from './People';
 
 function action() {
   return {
     chunks: ['about'],
-    title: people.title,
+    title: 'People',
     component: (
       <Layout>
-        <Page {...people} />
+        <People />
       </Layout>
     ),
   };

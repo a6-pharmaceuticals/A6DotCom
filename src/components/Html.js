@@ -15,7 +15,6 @@ import serialize from 'serialize-javascript';
 
 class Html extends React.Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     styles: PropTypes.arrayOf(
       PropTypes.shape({
@@ -34,19 +33,29 @@ class Html extends React.Component {
   };
 
   render() {
-    const { title, description, styles, scripts, app, children } = this.props;
+    const { description, styles, scripts, app, children } = this.props;
     return (
-      <html className="no-js" lang="en">
+      <html style={{ height: '100%' }} className="no-js" lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <title>{title}</title>
+          <title>A6 Pharmaceuticals</title>
           <meta name="description" content={description} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script" />
           ))}
           <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+          <link
+            rel="stylesheet"
+            media="screen"
+            href="https://fontlibrary.org/face/aileron"
+            type="text/css"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Hind"
+            rel="stylesheet"
+          />
           {styles.map(style => (
             <style
               key={style.id}
@@ -55,8 +64,12 @@ class Html extends React.Component {
             />
           ))}
         </head>
-        <body>
-          <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
+        <body style={{ height: '100%' }}>
+          <div
+            style={{ minHeight: '100%', position: 'relative' }}
+            id="app"
+            dangerouslySetInnerHTML={{ __html: children }}
+          />
           <script
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
           />

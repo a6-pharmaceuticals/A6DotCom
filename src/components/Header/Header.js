@@ -8,6 +8,7 @@
  */
 
 import React from 'react';
+import root from 'window-or-global';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
 import Link from '../Link';
@@ -16,13 +17,17 @@ import logoUrl from './A6-logo.svg';
 
 class Header extends React.Component {
   render() {
+    let pathname = null;
+    if (root && root.window && root.window.location) {
+      pathname = root.window.location.pathname;
+    }
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <Navigation />
           <Link className={s.brand} to="/">
-            <img src={logoUrl} width="38" height="38" alt="React" />
+            <img src={logoUrl} className={s.logo} alt="React" />
           </Link>
+          <Navigation pathname={pathname} />
         </div>
       </div>
     );
