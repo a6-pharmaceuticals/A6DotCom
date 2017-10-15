@@ -26,7 +26,7 @@ const Home = () => (
         <img className={s.image} alt="Cancer cell after" src={imgUrl2} />
       </div>
       <div className={s.textContainer}>
-        <h1 className={s.header}>ARF-6 Inhibitors</h1>
+        <h1 className={s.header}>ARF6 Inhibitors</h1>
         <div className={s.separator} />
         <p className={s.bodyText}>
           A6 Pharmaceuticals is developing small molecule ARF6 inhibitors for a
@@ -39,7 +39,7 @@ const Home = () => (
       </div>
       <div className={s.subBodyTextContainer}>
         <p className={s.subBodyText}>
-          ARF-6 is an intracellular convergence point for many inflammatory
+          ARF6 is an intracellular convergence point for many inflammatory
           agents (e.g., lipopolysaccharides) and cytokines (e.g., IL-6), which,
           alone or together, can cause increased leakiness of blood vessels and
           more release of inflammatory agents, potentially creating the
@@ -49,21 +49,21 @@ const Home = () => (
           <br />
         </p>
         <div className={s.diagramContainer}>
-          <img className={s.diagram} src={diagramUrl1} alt="ARF-6 diagram 1" />
+          <img className={s.diagram} src={diagramUrl1} alt="ARF6 diagram 1" />
           <p className={s.captionText}>
             {`Four well-known inflammatory pathways, IL-1R, IL-6R, TLR4, and VEGFR, have ARF6 as a common mediator. Activation of ARF6 leads to cadherin internalization, inducing vascular leak.`}
           </p>
         </div>
         <p className={s.subBodyText}>
           Researchers at the University of Utah led by Dr. Dean Li, together
-          with A6, have shown that inhibiting ARF-6 effectively blocks a number
+          with A6, have shown that inhibiting ARF6 effectively blocks a number
           of pro-inflammatory signalling pathways from inducing vascular leak.
-          Importantly, ARF-6 inhibition does not appear to dampen the ability of
-          the immune system. A variety of conditions can cause ARF-6-mediated
+          Importantly, ARF6 inhibition does not appear to dampen the ability of
+          the immune system. A variety of conditions can cause ARF6-mediated
           vascular leak, including acute lung injury, serious viral infections,
           sepsis, and retinopathies. Due to high mortality and lack of available
           therapy for acute lung injury, A6’s development efforts have focused
-          on developing our lead ARF-6 inhibitor, NAV-5093, for this condition.
+          on developing our lead ARF6 inhibitor, NAV-5093, for this condition.
           <br />
           <br />
           ALI, also known in its more severe form as acute respiratory distress
@@ -84,15 +84,15 @@ const Home = () => (
           <br />
         </p>
         <div className={s.diagramContainer}>
-          <img className={s.diagram} src={diagramUrl2} alt="ARF-6 diagram 2" />
+          <img className={s.diagram} src={diagramUrl2} alt="ARF6 diagram 2" />
           <p className={s.captionText}>
             {`Reduction in LPS-induced bronchoalveolar lavage fluid (BALF) cell count by NAV-5093. Pooled data from several experiments. Each data point represents one mouse. *, p < 0.05, ****, p < 0.0001`}
           </p>
         </div>
         <span className={s.subBodyText}>
           <p className={s.subBodyText}>
-            A6 has identified proprietary small molecules that block ARF-6
-            activation. In animal models of disease, A6’s ARF-6 inhibitors have
+            A6 has identified proprietary small molecules that block ARF6
+            activation. In animal models of disease, A6’s ARF6 inhibitors have
             been shown to:
           </p>
           <ul className={s.listContainer}>
@@ -120,7 +120,7 @@ const Home = () => (
           </ul>
           <p className={s.subBodyText}>
             A6 is currently conducting IND-enabling studies with its clinical
-            candidate for ALI/ARDS, NAV-5093 and expects to file an IND in late
+            candidate for ALI/ARDS, NAV-5093 and expects to file an IND in Q2
             2018.
           </p>
         </span>

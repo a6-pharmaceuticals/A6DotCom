@@ -22,7 +22,7 @@ class Contact extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1 className={s.title}>{this.props.title}</h1>
+          <h2 className={s.title}>{this.props.title}</h2>
           <h3 className={s.subTitle}>Phone:</h3>
           <p className={s.content}>801-587-1417</p>
           <h3 className={s.subTitle}>Email:</h3>
