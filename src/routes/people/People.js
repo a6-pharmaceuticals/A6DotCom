@@ -16,7 +16,7 @@ import s from './People.css';
 const People = () => (
   <div className={s.root}>
     <div className={s.container}>
-      <h2 className={s.subTitle}>Staff</h2>
+      <h2 className={s.subTitle}>Management</h2>
       {peopleInfo.map(person => (
         <div className={s.personContainer}>
           <h3 className={s.personName}>{person.name}</h3>
