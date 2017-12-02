@@ -1,0 +1,146 @@
+@import '../../components/variables.css';
+
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 20px auto 0;
+  padding: 0 0 95px;
+  max-width: var(--max-content-width);
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  flex-flow: column wrap;
+}
+
+.headerContainer {
+  border-bottom: solid 1px #78c06b;
+  display: block;
+  width: fit-content;
+  padding-right: 5px;
+  padding-left: 2px;
+  margin: 0 20px;
+}
+
+.subBodyTextContainer {
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.subBodyTextContainer:last-child {
+  margin-bottom: 0;
+}
+
+.subBodyText {
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+.captionText {
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.25px;
+  padding: 10px 5px 0;
+  display: block;
+}
+
+.cancerDiagram {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.diagram,
+.cancerDiagram {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.diagramContainer {
+  max-width: 480px;
+  height: fit-content;
+  float: right;
+  margin: 0 15px 15px;
+  display: block;
+  text-align: justify;
+}
+
+.diagramCancerContainer {
+  max-width: 590px;
+  height: fit-content;
+  margin: 20px 15px 15px;
+  display: inline-block;
+}
+
+.listContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 15px 10px;
+}
+
+.listItem {
+  padding-left: 1em;
+  text-indent: -0.8em;
+  margin: 5px 0;
+}
+
+.listItem::before {
+  font-size: 18px;
+  content: '• ';
+  color: #78c06b; /* or whatever color you prefer */
+}
+
+.header {
+  text-align: left;
+  color: #326399;
+  font-family: 'AileronRegular', sans-serif;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 35px;
+
+  @media only screen and (max-device-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-device-width: 415px) {
+    font-size: 24px;
+  }
+}
+
+.subHeader {
+  text-align: left;
+  color: #326399;
+  font-family: 'AileronRegular', sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 35px;
+  padding: 0 20px;
+
+  @media only screen and (max-device-width: 480px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-device-width: 415px) {
+    font-size: 22px;
+  }
+}
+
+/*
+ .headerContainer:focus {
+  outline: none;
+}
+*/

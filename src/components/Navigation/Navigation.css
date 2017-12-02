@@ -8,9 +8,6 @@
  */
 
 .root {
-  float: right;
-  margin: 6px 0 0;
-
   /* mobile and tablet/desktop */
   @media only screen and (max-device-width: 480px) {
     font-family: 'AileronRegular', sans-serif;
@@ -25,13 +22,17 @@
 
 .navLink {
   color: #1e1e1e;
-  text-decoration: none;
-  margin-left: 15px;
 }
 
 .navLink:hover,
 .navLinkSelected {
   color: #78c06b;
-  text-decoration: none;
+}
+
+.navLink,
+.navLinkSelected {
   margin-left: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 600;
 }

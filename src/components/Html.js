@@ -35,7 +35,11 @@ class Html extends React.Component {
   render() {
     const { description, styles, scripts, app, children } = this.props;
     return (
-      <html style={{ height: '100%' }} className="no-js" lang="en">
+      <html
+        style={{ height: '100%', width: '100%' }}
+        className="no-js"
+        lang="en"
+      >
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
