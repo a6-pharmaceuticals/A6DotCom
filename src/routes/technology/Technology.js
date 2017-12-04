@@ -124,8 +124,8 @@ class Technology extends React.Component {
               </ul>
               <p className={s.subBodyText}>
                 {`A6 is currently conducting IND-enabling studies with its clinical
-                candidate for ALI/ARDS, NAV-5093 and expects to file an IND in Q2
-                2018.`}
+                candidate for ALI/ARDS, NAV-5093 and expects to file an IND in Q1
+                2019.`}
               </p>
             </span>
           </div>
