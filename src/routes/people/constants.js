@@ -9,6 +9,8 @@ const peopleInfo = [
       Utah Medical School doing research in developmental neurobiology.`,
       'Hunter has a BA in American Literature from the University of Illinois, a PhD in Psychobiology from Yale University and did his postdoctoral work in the Neurosurgery Department at the University of Virginia Medical Center.',
     ],
+    imgPath: './assets/hunter_mgmt.jpg',
+    imgAlt: 'Hunter Jackson',
   },
   {
     name: 'Alan Mueller',
@@ -29,6 +31,8 @@ const peopleInfo = [
       Sciences Center. He was a postdoctoral fellow at the University of Washington in
       Seattle.`,
     ],
+    imgPath: './assets/alan_mgmt.jpg',
+    imgAlt: 'Alan Mueller',
   },
   {
     name: 'Daniel Wettstein',
@@ -50,6 +54,8 @@ const peopleInfo = [
       University. He was a postdoctoral fellow in the Molecular Neurobiology Laboratories at
       the Salk Institute for Biological Studies in San Diego.`,
     ],
+    imgPath: './assets/daniel_mgmt.jpg',
+    imgAlt: 'Daniel Wettstein',
   },
 ];
 
