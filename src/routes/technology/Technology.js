@@ -29,6 +29,28 @@ class Technology extends React.Component {
           </div>
           <div className={s.subBodyTextContainer}>
             <p className={s.subBodyText}>
+              {`Vascular leak is a critical pathologic component of many serious
+                conditions 1. Examples include acute lung injury/acute respiratory
+                distress syndrome, sepsis, myocardial infarction, diabetic neuropathy,
+                and rheumatoid arthritis. The need for better therapies for all these
+                disorders is urgent.`}
+              <br />
+              <br />
+            </p>
+            <p className={s.subBodyText}>
+              {`There is widespread recognition of the need for new tools to control
+                vascular leak. A handful of drugs developed to accomplish this have
+                been significant medical advances and commercial successes. The
+                various VEGF inhibitors (Lucentis®, Eylea®, Avastin®, etc.) are prime
+                examples. However, vascular leak results from the actions of a number
+                of agents, so a compound that can simultaneously reduce the effects
+                of many of these agents would be expected to have clear therapeutic
+                advantages. Strong in vitro and in vivo evidence indicates that ARF6
+                inhibitors can accomplish that important goal.`}
+              <br />
+              <br />
+            </p>
+            <p className={s.subBodyText}>
               {`ARF6 is an intracellular convergence point for many inflammatory
               agents (e.g., lipopolysaccharides) and cytokines (e.g., IL-6), which,
               alone or together, can cause increased leakiness of blood vessels and
@@ -54,13 +76,13 @@ class Technology extends React.Component {
             <p className={s.subBodyText}>
               {`Researchers at the University of Utah led by Dr. Dean Li, together
               with A6, have shown that inhibiting ARF6 effectively blocks a number
-              of pro-inflammatory signalling pathways from inducing vascular leak.
-              Importantly, ARF6 inhibition does not appear to dampen the ability of
+              of pro-inflammatory signaling pathways from inducing vascular leak.
+              Importantly, ARF6 inhibition does not appear to dampen the response of
               the immune system. A variety of conditions can cause ARF6-mediated
               vascular leak, including acute lung injury, serious viral infections,
               sepsis, and retinopathies. Due to high mortality and lack of available
-              therapy for acute lung injury, A6’s development efforts have focused
-              on developing our lead ARF6 inhibitor, NAV-5093, for this condition.`}
+              therapy for acute lung injury (ALI), A6’s development efforts have focused
+              on developing our lead ARF6 inhibitor, NAV-5188, for this condition.`}
               <br />
               <br />
               {`ALI, also known in its more severe form as acute respiratory distress
