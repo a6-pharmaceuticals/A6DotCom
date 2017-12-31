@@ -30,7 +30,7 @@ class Technology extends React.Component {
           <div className={s.subBodyTextContainer}>
             <p className={s.subBodyText}>
               {`Vascular leak is a critical pathologic component of many serious
-                conditions 1. Examples include acute lung injury/acute respiratory
+                conditions. Examples include acute lung injury/acute respiratory
                 distress syndrome, sepsis, myocardial infarction, diabetic neuropathy,
                 and rheumatoid arthritis. The need for better therapies for all these
                 disorders is urgent.`}
