@@ -21,6 +21,13 @@ class Technology extends React.Component {
   // TODO: components!!!!
   render() {
     const captionBoldStyle = { display: 'inline', fontWeight: '600' };
+    const aliGraphContainerStyles = {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      maxWidth: '500px',
+    };
+
     return (
       <div className={s.root}>
         <div className={s.container}>
@@ -102,17 +109,21 @@ class Technology extends React.Component {
               <br />
               <br />
             </p>
-            <div className={s.diagramContainer}>
+            <div style={aliGraphContainerStyles} className={s.diagramContainer}>
               <img
                 className={s.diagram}
                 src={diagramUrl2}
                 alt="ARF6 diagram 2"
+                style={{
+                  height: '375px',
+                  boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)',
+                }}
               />
               <span className={s.captionText}>
                 <p style={captionBoldStyle}>
-                  {`Reduction in LPS-induced bronchoalveolar lavage fluid (BALF) cell count by NAV-5093. `}
+                  {`Reduction in LPS-induced bronchoalveolar lavage fluid (BALF) cell count by NAV-5171 and NAV-5172. `}
                 </p>
-                {`Pooled data from several experiments. Each data point represents one mouse. *, p < 0.05, ****, p < 0.0001`}
+                {`ARF6 inhibitor (30 mg/kg) was given by intraperitoneal (IP) injection 3 hours after intratracheal administration of LPS. Dexamethasone (5 mg/kg) was given by IP injection immediately after LPS instillation and 6 hours later. Each data point represents one mouse.  ****, p < 0.0001 compared to DMSO/LPS. Data were analyzed by 1-way ANOVA followed by Tukey’s test for multiple comparisons.`}
               </span>
             </div>
             <span className={s.subBodyText}>
