@@ -115,11 +115,12 @@ class Technology extends React.Component {
                 src={diagramUrl2}
                 alt="ARF6 diagram 2"
                 style={{
-                  height: '375px',
+                  maxHeight: '375px',
+                  minHeight: '285px',
                   boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)',
                 }}
               />
-              <span className={s.captionText}>
+              <span style={{ textAlign: 'justify' }} className={s.captionText}>
                 <p style={captionBoldStyle}>
                   {`Reduction in LPS-induced bronchoalveolar lavage fluid (BALF) cell count by NAV-5171 and NAV-5172. `}
                 </p>
