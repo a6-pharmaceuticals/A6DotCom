@@ -73,8 +73,9 @@ class Technology extends React.Component {
                 className={s.diagram}
                 src={diagramUrl1}
                 alt="ARF6 diagram 1"
+                style={{ boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)' }}
               />
-              <span className={s.captionText}>
+              <span style={{ textAlign: 'justify' }} className={s.captionText}>
                 <p style={captionBoldStyle}>
                   {`Well-known inflammatory pathways, e.g., IL-1R, TLR4, and VEGFR, have ARF6 as a common mediator. `}
                 </p>
