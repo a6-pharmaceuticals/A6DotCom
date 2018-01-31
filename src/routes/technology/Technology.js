@@ -36,34 +36,35 @@ class Technology extends React.Component {
           </div>
           <div className={s.subBodyTextContainer}>
             <p className={s.subBodyText}>
-              {`Vascular leak is a critical pathologic component of many serious
-                conditions. Examples include acute lung injury/acute respiratory
-                distress syndrome, sepsis, myocardial infarction, diabetic neuropathy,
-                and rheumatoid arthritis. The need for better therapies for all these
-                disorders is urgent.`}
+              {`Vascular leak is a critical pathologic component of many
+                serious conditions. Examples include acute lung injury/acute
+                respiratory distress syndrome, sepsis, myocardial infarction,
+                diabetic neuropathy, and rheumatoid arthritis. The need for
+                better therapies for all these disorders is urgent.`}
               <br />
               <br />
             </p>
             <p className={s.subBodyText}>
-              {`There is widespread recognition of the need for new tools to control
-                vascular leak. A handful of drugs developed to accomplish this have
-                been significant medical advances and commercial successes. The
-                various VEGF inhibitors (Lucentis®, Eylea®, Avastin®, etc.) are prime
-                examples. However, vascular leak results from the actions of a number
-                of agents, so a compound that can simultaneously reduce the effects
-                of many of these agents would be expected to have clear therapeutic
-                advantages. Strong in vitro and in vivo evidence indicates that ARF6
-                inhibitors can accomplish that important goal.`}
+              {`There is widespread recognition of the need for new tools to
+                control vascular leak. A handful of drugs developed to
+                accomplish this have been significant medical advances and
+                commercial successes. The various VEGF inhibitors (Lucentis®,
+                Eylea®, Avastin®, etc.) are prime examples. However, vascular
+                leak results from the actions of a number of agents, so a
+                compound that can simultaneously reduce the effects of many
+                of these agents would be expected to have clear therapeutic
+                advantages. Strong in vitro and in vivo evidence indicates
+                that ARF6 inhibitors can accomplish that important goal.`}
               <br />
               <br />
             </p>
             <p className={s.subBodyText}>
               {`ARF6 is an intracellular convergence point for many inflammatory
-              agents (e.g., lipopolysaccharides) and cytokines (e.g., IL-6), which,
-              alone or together, can cause increased leakiness of blood vessels and
-              more release of inflammatory agents, potentially creating the
-              “cytokine storm” that leads to systemic inflammatory response
-              syndrome, end organ failure, and death.`}
+                agents (e.g., lipopolysaccharides) and cytokines (e.g., IL-1β),
+                which, alone or together, can cause increased leakiness of blood
+                vessels and more release of inflammatory agents, potentially
+                creating the “cytokine storm” that leads to systemic inflammatory
+                response syndrome, end organ failure, and death.`}
               <br />
               <br />
             </p>
@@ -75,7 +76,7 @@ class Technology extends React.Component {
               />
               <span className={s.captionText}>
                 <p style={captionBoldStyle}>
-                  {`Four well-known inflammatory pathways, IL-1R, IL-6R, TLR4, and VEGFR, have ARF6 as a common mediator. `}
+                  {`Well-known inflammatory pathways, e.g., IL-1R, TLR4, and VEGFR, have ARF6 as a common mediator. `}
                 </p>
                 {`Activation of ARF6 leads to cadherin internalization, inducing vascular leak.`}
               </span>
