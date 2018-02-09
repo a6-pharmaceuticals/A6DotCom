@@ -316,9 +316,7 @@ class Technology extends React.Component {
                   Uveal melanoma proliferation and metastasis
                 </li>
                 <li className={s.listItem}>Cutaneous melanoma metastasis</li>
-                <li className={s.listItem}>
-                  Malignant schwannoma tumorigenesis
-                </li>
+                <li className={s.listItem}>Malignant sarcoma tumorigenesis</li>
               </ul>
             </span>
           </div>
