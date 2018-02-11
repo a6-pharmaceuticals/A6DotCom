@@ -22,7 +22,7 @@ const isAnalyze =
 
 const reScript = /\.(js|jsx|mjs)$/;
 const reStyle = /\.(css|less|styl|scss|sass|sss)$/;
-const reImage = /\.(bmp|gif|jpg|jpeg|png|svg)$/;
+const reImage = /\.(bmp|gif|jpg|jpeg|png|svg|pdf)$/;
 const staticAssetName = isDebug
   ? '[path][name].[ext]?[hash:8]'
   : '[hash:8].[ext]';

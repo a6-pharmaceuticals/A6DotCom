@@ -16,6 +16,7 @@ import diagramUrl2 from './arf-6-diagram-2.jpg';
 import cancerDiagramUrl1 from './arf6-cancer-1.png';
 import cancerDiagramUrl2 from './arf6-cancer-2.png';
 import cancerDiagramUrl3 from './arf6-cancer-3.png';
+import pdfVascularLeak from './ARF6_and_Vascular_Leak_FEB_2018.pdf';
 
 class Technology extends React.Component {
   // TODO: components!!!!
@@ -34,7 +35,7 @@ class Technology extends React.Component {
           <div className={s.headerContainer}>
             <h2 className={s.header}>ARF6 and Vascular Leak</h2>
           </div>
-          <div className={s.subBodyTextContainer}>
+          <div className={s.subBodyTextContainer} style={{ textAlign: 'left' }}>
             <p className={s.subBodyText}>
               {`Vascular leak is a critical pathologic component of many
                 serious conditions. Examples include acute lung injury/acute
@@ -163,6 +164,13 @@ class Technology extends React.Component {
                 candidate for ALI/ARDS, NAV-5093 and expects to file an IND in Q1
                 2019.`}
               </p>
+            </span>
+            <br />
+            <span className={s.subBodyText}>
+              {`To view the slide deck "ARF6 Inhibitors for Disorders of Vascular Leak," `}
+              <a href={pdfVascularLeak} target="_blank">
+                click here.
+              </a>
             </span>
           </div>
 
