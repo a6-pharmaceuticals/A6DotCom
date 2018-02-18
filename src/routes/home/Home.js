@@ -27,13 +27,14 @@ const Home = () => (
         <h1 className={s.header}>ARF6 Inhibitors</h1>
         <div className={s.separator} />
         <p className={s.bodyText}>
-          A6 Pharmaceuticals is developing small molecule ARF6 inhibitors for a
-          variety of conditions. Because ARF6 plays a critical role in
-          pathologic protein trafficking, inhibition of ARF6, using our
-          proprietary compounds, has been shown to be effective in animal models
-          of acute lung injury/acute respiratory distress, certain types of
-          cancer, diabetic retinopathy, age-related macular degeneration, and
-          severe cerebral malaria.
+          ARF6 plays a critical role in pathologic protein trafficking in
+          conditions as seemingly diverse as acute lung injury and melanoma.  A6
+          Pharmaceuticals has identified proprietary small molecule inhibitors
+          of ARF6. Using these compounds, we have demonstrated efficacy in
+          <span style={{ fontStyle: 'italic' }}>{` in vivo `}</span>
+          models of disease including uveal melanoma, malignant sarcoma, acute
+          lung injury/acute respiratory distress syndrome, multi-drug resistant
+          gram negative bacterial pneumonia, and diabetic retinopathy.
         </p>
       </div>
     </div>

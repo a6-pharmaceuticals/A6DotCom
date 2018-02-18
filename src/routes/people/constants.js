@@ -3,11 +3,28 @@ const peopleInfo = [
     name: 'Hunter Jackson',
     title: 'Chairman and CEO',
     paragraphs: [
-      `Hunter was previously co-founder and Executive Chairman of Navigen. He was also a
-      co-founder and served as Chairman and CEO of NPS Pharmaceuticals, Inc. (NASDAQ:
-      NPSP) from 1986 to 2006. Prior to that, Hunter was on the faculty of the University of
-      Utah Medical School doing research in developmental neurobiology.`,
-      'Hunter has a BA in American Literature from the University of Illinois, a PhD in Psychobiology from Yale University and did his postdoctoral work in the Neurosurgery Department at the University of Virginia Medical Center.',
+      `Hunter Jackson is co-founder and Chairman of the Board of Navigen, Inc.
+      He was co-founder and served as Chairman and CEO of NPS Pharmaceuticals, Inc.
+      (NASDAQ: NPSP) from 1986 to 2006. Three products were brought forward during
+      Hunter's tenure at NPS. The first product, Sensipar®, was launched in
+      2004 for the treatment of secondary hyperparathyroidism and hypercalcemia.
+      It is marketed by Amgen in the U.S. and Europe and by Kyowa Hakko Kirin in
+      Asia, and generates annual sales of over $2 billion. NPS's second product,
+      Natpara®, an injectable synthetic hormone approved for treatment of
+      hypoparathyroidism, is marketed by Shire. The company's third product,
+      Gattex®, an injectable peptide for the treatment of short bowel syndrome,
+      was launched worldwide in 2013. NPS was acquired by Shire in 2015 for $5.2B.`,
+      `Hunter was a member of the Governing Authority of the Utah Science,
+      Technology, and Research Economic Development Initiative (USTAR)
+      from 2006-2012. He received the 1998 Ernst & Young Utah Entrepreneur
+      of the Year Award, the 2002 Utah Governor's Medal for Science and
+      Technology, and the 2017 BioUtah Willem J. Kolff Lifetime Achievement Award.`,
+      `Hunter has a BA in American Literature from the University of Illinois,
+      a PhD in Psychobiology from Yale University and did his postdoctoral work
+      in the Neurosurgery Department at the University of Virginia Medical
+      Center. Prior to co-founding NPS, he was on the faculty of the University
+      of Utah School of Medicine, conducting research in the field of
+      developmental neurobiology.`,
     ],
     imgPath: './assets/hunter_mgmt.jpg',
     imgAlt: 'Hunter Jackson',
