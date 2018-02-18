@@ -165,13 +165,14 @@ class Technology extends React.Component {
                 2019.`}
               </p>
             </span>
-            <br />
-            <span className={s.subBodyText}>
-              {`To view the slide deck "ARF6 Inhibitors for Disorders of Vascular Leak," `}
-              <a href={pdfVascularLeak} target="_blank">
-                click here.
-              </a>
-            </span>
+            <div className={s.slideDeckContainer}>
+              <span className={s.subBodyText}>
+                {`To view the slide deck "ARF6 Inhibitors for Disorders of Vascular Leak," `}
+                <a href={pdfVascularLeak} target="_blank">
+                  click here.
+                </a>
+              </span>
+            </div>
           </div>
 
           <div className={s.headerContainer}>

@@ -139,6 +139,15 @@
   }
 }
 
+.slideDeckContainer {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #77c16a;
+  display: flex;
+  margin-top: 5px;
+}
+
 /*
  .headerContainer:focus {
   outline: none;
