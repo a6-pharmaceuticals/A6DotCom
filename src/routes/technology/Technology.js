@@ -85,31 +85,32 @@ class Technology extends React.Component {
               </span>
             </div>
             <p className={s.subBodyText}>
-              {`Researchers at the University of Utah led by Dr. Dean Li, together
-              with A6, have shown that inhibiting ARF6 effectively blocks a number
-              of pro-inflammatory signaling pathways from inducing vascular leak.
-              Importantly, ARF6 inhibition does not appear to dampen the response of
-              the immune system. A variety of conditions can cause ARF6-mediated
-              vascular leak, including acute lung injury, serious viral infections,
-              sepsis, and retinopathies. Due to high mortality and lack of available
-              therapy for acute lung injury (ALI), A6’s development efforts have focused
-              on developing our lead ARF6 inhibitor, NAV-5188, for this condition.`}
+              {`Researchers at the University of Utah led by Dr. Dean Li,
+                together with A6, have shown that inhibiting ARF6 effectively
+                blocks a number of pro-inflammatory signaling pathways from
+                inducing vascular leak. Importantly, ARF6 inhibition does not
+                appear to dampen the response of the immune system. A variety of
+                conditions can cause ARF6-mediated vascular leak, including acute
+                lung injury, serious viral infections, sepsis, and retinopathies.
+                Due to high mortality and lack of available therapy for the acute
+                respiratory distress syndrome (ARDS), A6’s development efforts have
+                focused on developing our lead ARF6 inhibitor, NAV-5093, for this
+                condition.`}
               <br />
               <br />
-              {`ALI, also known in its more severe form as acute respiratory distress
-              syndrome (ARDS), is a life-threatening lung condition that prevents
-              sufficient oxygenation of blood. Causes of ALI include aspiration,
-              inhalation injury, bacterial and viral pneumonias, trauma, and sepsis.
-              These can trigger an overwhelming inflammatory response (cytokine
-              storm) that increases endothelial and epithelial permeability and
-              efflux of inflammatory cells, protein, and water from the vascular
-              system into the lung alveoli (air sacs). In many patients, this
-              inflammatory response results in hypoxemia, multi-organ failure,
-              cardiovascular collapse, shock, and death. There are approximately
-              200,000 cases of ALI in the U.S. each year. The mortality rate of
-              patients with ALI/ARDS is approximately 40%, and those who survive
-              often have lasting lung damage and other disabilities associated with
-              lack of oxygen to the brain.`}
+              {`ARDS is a life-threatening lung condition that prevents sufficient
+                oxygenation of blood. Causes of ALI include aspiration, inhalation
+                injury, bacterial and viral pneumonias, trauma, and sepsis. These
+                can trigger an overwhelming inflammatory response (cytokine storm)
+                that increases endothelial and epithelial permeability and efflux
+                of inflammatory cells, protein, and water from the vascular system
+                into the lung alveoli (air sacs). In many patients, this inflammatory
+                response results in hypoxemia, multi-organ failure, cardiovascular
+                collapse, shock, and death. There are approximately 200,000 cases
+                of ARDS in the U.S. each year. The mortality rate of patients with
+                ARDS is approximately 40%, and those who survive often have lasting
+                lung damage and other disabilities associated with lack of oxygen
+                to the brain.`}
               <br />
               <br />
             </p>
@@ -161,9 +162,9 @@ class Technology extends React.Component {
                 </li>
               </ul>
               <p className={s.subBodyText}>
-                {`A6 is currently conducting IND-enabling studies with its clinical
-                candidate for ALI/ARDS, NAV-5093 and expects to file an IND in Q1
-                2019.`}
+                {`A6 is currently conducting IND-enabling studies with its
+                  clinical candidate for ARDS, NAV-5093 and expects to file an
+                  IND in Q1 2019.`}
               </p>
             </span>
             <div className={s.slideDeckContainer}>
