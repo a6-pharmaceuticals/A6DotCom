@@ -78,6 +78,51 @@ const peopleInfo = [
 
 const advisorInfo = [
   {
+    name: 'Peter Adamson, Ph.D.',
+    paragraphs: [
+      `Peter is Honorary Professor of Molecular Pathology at the University College London
+      Institute of Ophthalmology. He has more than 22 years of experience in academic and
+      industrial research; other recent roles included serving as the Chief Executive Officer at
+      Ophthaltec Limited and as the Senior Director of Inflammation Biology (and
+      Ophthalmology), the Centre for Excellence in External Drug Discovery (CEED) at
+      GlaxoSmithKline (GSK). Most recently, Peter was Vice President and Head of Research
+      of the GlaxoSmithKline Ophthalmology Discovery Performance Unit.`,
+      `Peter received a BSc degree in Biochemistry from the University of Newcastle-Upon-
+      Tyne and a PhD degree in Biochemistry from the University of London. He has more
+      than 90 publications that include research articles, reviews, and book chapters. Peter
+      has received more than 25 research awards in the area of inflammation and
+      ophthalmology.`,
+    ],
+  },
+  {
+    name: 'Paula Bokesch, M.D.',
+    paragraphs: [
+      `Paula is currently Senior Consultant at HDI Pharmaceutical Consultants. She was
+      formerly Chief Medical Officer at Tenax Therapeutics, where she is focused on clinical
+      development of products for the critical care market. Prior to that she was Senior
+      Medical Director at Cubist Pharmaceuticals where she held various positions in both
+      drug discovery and clinical development. Before moving to Cubist, she was Global
+      Medical Director at Hospira.`,
+      `Paula received her MD degree from Wake Forest University School of Medicine and
+      served as a Pediatric Anesthesia Fellow at Harvard Medical School.`,
+    ],
+  },
+  {
+    name: 'Dean Y. Li, M.D., Ph.D.',
+    paragraphs: [
+      `Dean is currently Vice President, Head of Translational Medicine at Merck & Co. in New
+      Jersey. Prior to his role at Merck, Dean worked as clinician and translational medical
+      research scientist at the University of Utah for more than two decades. During his time
+      at the University, he co-founded multiple biotech companies stemming from research
+      from his laboratory, including Navigen, Recursion Pharmaceuticals, and Hydra
+      Biosciences. Dean served as the H.A. & Edna Benning Professor of Medicine and
+      Cardiology, the Vice-Dean of Research at the University of Utah Health Science Center,
+      and as the Chief Scientific Officer of University of Utah Health Care.`,
+      `Dean trained at Washington University in Saint Louis before coming to Utah to work as
+      a post-doc in the laboratory of Mark Keating.`,
+    ],
+  },
+  {
     name: 'Michael Matthay, M.D.',
     paragraphs: [
       `Michael is a Professor of Medicine and Anesthesia at the University of California at San
@@ -93,19 +138,6 @@ const advisorInfo = [
       Pennsylvania School of Medicine. Michael received clinical training in Internal Medicine
       at the University of Colorado and in Pulmonary and Critical Care Medicine from the
       University of California at San Francisco.`,
-    ],
-  },
-  {
-    name: 'Paula Bokesch, M.D.',
-    paragraphs: [
-      `Paula is currently Senior Consultant at HDI Pharmaceutical Consultants. She was
-      formerly Chief Medical Officer at Tenax Therapeutics, where she is focused on clinical
-      development of products for the critical care market. Prior to that she was Senior
-      Medical Director at Cubist Pharmaceuticals where she held various positions in both
-      drug discovery and clinical development. Before moving to Cubist, she was Global
-      Medical Director at Hospira.`,
-      `Paula received her MD degree from Wake Forest University School of Medicine and
-      served as a Pediatric Anesthesia Fellow at Harvard Medical School.`,
     ],
   },
   {
@@ -135,54 +167,6 @@ const advisorInfo = [
       sepsis, dengue, and malaria).`,
       `Guy was educated at Emory University and Baylor College of Medicine followed by
       postgraduate training at the University of Utah and the University of Washington.`,
-    ],
-  },
-  {
-    name: 'Peter Adamson, Ph.D.',
-    paragraphs: [
-      `Peter is Honorary Professor of Molecular Pathology at the University College London
-      Institute of Ophthalmology. He has more than 22 years of experience in academic and
-      industrial research; other recent roles included serving as the Chief Executive Officer at
-      Ophthaltec Limited and as the Senior Director of Inflammation Biology (and
-      Ophthalmology), the Centre for Excellence in External Drug Discovery (CEED) at
-      GlaxoSmithKline (GSK). Most recently, Peter was Vice President and Head of Research
-      of the GlaxoSmithKline Ophthalmology Discovery Performance Unit.`,
-      `Peter received a BSc degree in Biochemistry from the University of Newcastle-Upon-
-      Tyne and a PhD degree in Biochemistry from the University of London. He has more
-      than 90 publications that include research articles, reviews, and book chapters. Peter
-      has received more than 25 research awards in the area of inflammation and
-      ophthalmology.`,
-    ],
-  },
-  {
-    name: 'Dean Y. Li, M.D., Ph.D.',
-    paragraphs: [
-      `Dean is currently Vice President, Head of Translational Medicine at Merck & Co. in New
-      Jersey. Prior to his role at Merck, Dean worked as clinician and translational medical
-      research scientist at the University of Utah for more than two decades. During his time
-      at the University, he co-founded multiple biotech companies stemming from research
-      from his laboratory, including Navigen, Recursion Pharmaceuticals, and Hydra
-      Biosciences. Dean served as the H.A. & Edna Benning Professor of Medicine and
-      Cardiology, the Vice-Dean of Research at the University of Utah Health Science Center,
-      and as the Chief Scientific Officer of University of Utah Health Care.`,
-      `Dean trained at Washington University in Saint Louis before coming to Utah to work as
-      a post-doc in the laboratory of Mark Keating.`,
-    ],
-  },
-  {
-    name: 'Edward Nemeth, Ph.D.',
-    paragraphs: [
-      `Ed is a consultant to the biopharmaceutical industry and academic consortiums focused
-      on drug discovery. He has experience in both academia and industry and is the former
-      Chief Scientific Officer of NPS Pharmaceuticals, acquired by Shire in 2015. He
-      discovered the parathyroid calcium receptor and coined the terms calcimimetic and
-      calcilytic to describe activators and antagonists of this receptor. He is an inventor of
-      cinacalcet, the first allosteric modulator of a G protein-coupled receptor to reach the
-      market. He is currently involved in the development of calcilytics for the treatment of
-      autosomal dominant hypocalcemia.`,
-      `Dr. Nemeth received a BA in chemistry and psychology from Lawrence University, a MA
-      in psychology from Princeton University, and MS, M.Phil. and PhD degrees in
-      pharmacology from Yale University.`,
     ],
   },
 ];

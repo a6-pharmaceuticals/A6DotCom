@@ -17,7 +17,7 @@ import cancerDiagramUrl1 from './arf6-cancer-1.png';
 import cancerDiagramUrl2 from './arf6-cancer-2.png';
 import cancerDiagramUrl3 from './arf6-cancer-3.png';
 import pdfVascularLeak from './ARF6_and_Vascular_Leak_FEB_2018.pdf';
-import pdfCancer from './ARF6_Inhibitors_for_Cancer_FEB_2018.pdf';
+// import pdfCancer from './ARF6_Inhibitors_for_Cancer_FEB_2018.pdf';
 
 class Technology extends React.Component {
   // TODO: components!!!!
@@ -329,17 +329,6 @@ class Technology extends React.Component {
                 <li className={s.listItem}>Cutaneous melanoma metastasis</li>
                 <li className={s.listItem}>Malignant sarcoma tumorigenesis</li>
               </ul>
-            </span>
-          </div>
-          <div
-            style={{ marginTop: '0', width: 'fit-content' }}
-            className={s.slideDeckContainer}
-          >
-            <span className={s.subBodyText}>
-              {`To view the slide deck "ARF6 Inhibitors for Cancer," `}
-              <a href={pdfCancer} target="_blank">
-                click here.
-              </a>
             </span>
           </div>
         </div>
