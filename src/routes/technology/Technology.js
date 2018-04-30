@@ -99,7 +99,7 @@ class Technology extends React.Component {
               <br />
               <br />
               {`ARDS is a life-threatening lung condition that prevents sufficient
-                oxygenation of blood. Causes of ALI include aspiration, inhalation
+                oxygenation of blood. Causes of ARDS include aspiration, inhalation
                 injury, bacterial and viral pneumonias, trauma, and sepsis. These
                 can trigger an overwhelming inflammatory response (cytokine storm)
                 that increases endothelial and epithelial permeability and efflux
@@ -143,22 +143,18 @@ class Technology extends React.Component {
                   Reduce the effects of LPS in a model of acute lung injury;
                 </li>
                 <li className={s.listItem}>
-                  Improve survival in animal models of endotoxemia / sepsis;
+                  Improve survival in models of multidrug-resistant bacterial
+                  pneumonia (Acinetobacter baumannii and Pseudomonas
+                  aeruginosa);
                 </li>
                 <li className={s.listItem}>
-                  Improve survival in animals infected with antibiotic resistant
-                  bacteria;
-                </li>
-                <li className={s.listItem}>
-                  Improve survival in animals infected with cerebral malaria;
+                  Improve survival in animal models of endotoxemia / sepsis (CLP
+                  polymicrobial sepsis, MRSA-induced sepsis, Candida-induced
+                  sepsis);
                 </li>
                 <li className={s.listItem}>
                   Reduce retinal permeability in animal models of age-related
-                  macular degeneration and diabetic retinopathy; and,
-                </li>
-                <li className={s.listItem}>
-                  Significantly reduce inflammation in an animal model of
-                  rheumatoid arthritis.
+                  macular degeneration and diabetic retinopathy.
                 </li>
               </ul>
               <p className={s.subBodyText}>
