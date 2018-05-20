@@ -13,6 +13,7 @@ import { peopleInfo, advisorInfo } from './constants';
 import s from './People.css';
 import alanPicUrl from './assets/alan_mgmt.jpg';
 import danielPicUrl from './assets/daniel_mgmt.jpg';
+import davePicUrl from './assets/dave_mgmt.jpg';
 import hunterPicUrl from './assets/hunter_mgmt.jpg';
 
 const getPhoto = index => {
@@ -20,8 +21,10 @@ const getPhoto = index => {
     case 0:
       return hunterPicUrl;
     case 1:
-      return alanPicUrl;
+      return davePicUrl;
     case 2:
+      return alanPicUrl;
+    case 3:
       return danielPicUrl;
     default:
       return null;

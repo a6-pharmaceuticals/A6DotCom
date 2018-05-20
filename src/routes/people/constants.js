@@ -30,6 +30,19 @@ const peopleInfo = [
     imgAlt: 'Hunter Jackson',
   },
   {
+    name: 'Dave Clark',
+    title: 'Chief Operating Officer',
+    paragraphs: [
+      'Before joining A6, Dave was on the faculty of Utah State University, first as the Executive Director of Entrepreneurial Programs in the Huntsman School of Business. He was later appointed Director, Technology Commercialization and in 2016 was named Associate Vice President, Corporate Relations.',
+      'Prior to his time at USU, Dave held senior management positions in both public and private companies. From 2005 to 2008, he was Chief Executive Officer at Prolexys Pharmaceuticals, Inc., a private company established as a spin-out from Myriad Genetics.  He led efforts culminating in a $20 million Series A investment and the subsequent work to develop the company’s small molecule drug candidate for treating solid tumors, including colon, pancreatic, and ovarian cancers, through to a Phase 1b trial.',
+      'Between 1995 and 2005 Dave was Vice President, Investor Relations and then Vice President, Operations at NPS Pharmaceuticals, Inc.  During his tenure at NPS, a publicly traded entity, Dave participated in various offerings that brought over $600 million to the company.',
+      'From 1988 to 1995, Dave worked as a business development officer with Agridnye, Inc., a publicly traded agricultural biotech firm.',
+      'Dave earned his BS from Brigham Young University, his MS from the University of Illinois, and an MBA from the University of Utah. Dave was a founding trustee of the Utah Life Science Association and served as a member of the Governor’s State Advisory Council on Science and Technology.  He was a director and Vice Chairman of the Utah Technology Council.',
+    ],
+    imgPath: './assets/dave_mgmt.jpg',
+    imgAlt: 'Dave Clark',
+  },
+  {
     name: 'Alan Mueller',
     title: 'Vice President of Research',
     paragraphs: [
