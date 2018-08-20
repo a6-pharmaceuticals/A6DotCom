@@ -28,13 +28,24 @@ const Home = () => (
         <div className={s.separator} />
         <p className={s.bodyText}>
           ARF6 plays a critical role in pathologic protein trafficking in
-          conditions as seemingly diverse as acute lung injury and melanoma.  A6
+          conditions as seemingly diverse as acute lung injury and melanoma. A6
           Pharmaceuticals has identified proprietary small molecule inhibitors
           of ARF6. Using these compounds, we have demonstrated efficacy in
           <span style={{ fontStyle: 'italic' }}>{` in vivo `}</span>
           models of disease including uveal melanoma, malignant sarcoma, acute
           lung injury/acute respiratory distress syndrome, multi-drug resistant
           gram negative bacterial pneumonia, and diabetic retinopathy.
+          <br />
+          <br />
+          A6 is aggressively advancing its lead program in acute respiratory
+          distress syndrome through IND and into Phase 1 safety and proof of
+          concept, and its pancreatic cancer program through proof of concept in
+          animals and into IND-enabling studies.
+          <br />
+          <br />
+          A6 is guided by a team of senior managers, scientists, directors, and
+          advisors with extensive experience in the pharma industry, finance,
+          regulatory affairs, clinical practice, and basic research.
         </p>
       </div>
     </div>
