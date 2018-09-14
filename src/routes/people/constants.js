@@ -1,7 +1,7 @@
 const peopleInfo = [
   {
     name: 'Hunter Jackson',
-    title: 'Chairman and CEO',
+    title: 'Chairman',
     paragraphs: [
       `Hunter Jackson is co-founder and Chairman of the Board of Navigen, Inc.
       He was co-founder and served as Chairman and CEO of NPS Pharmaceuticals, Inc.
@@ -31,7 +31,7 @@ const peopleInfo = [
   },
   {
     name: 'Dave Clark',
-    title: 'Chief Operating Officer',
+    title: 'Chief Executive Officer',
     paragraphs: [
       'Before joining A6, Dave was on the faculty of Utah State University, first as the Executive Director of Entrepreneurial Programs in the Huntsman School of Business. He was later appointed Director, Technology Commercialization and in 2016 was named Associate Vice President, Corporate Relations.',
       'Prior to his time at USU, Dave held senior management positions in both public and private companies. From 2005 to 2008, he was Chief Executive Officer at Prolexys Pharmaceuticals, Inc., a private company established as a spin-out from Myriad Genetics.  He led efforts culminating in a $20 million Series A investment and the subsequent work to develop the company’s small molecule drug candidate for treating solid tumors, including colon, pancreatic, and ovarian cancers, through to a Phase 1b trial.',
