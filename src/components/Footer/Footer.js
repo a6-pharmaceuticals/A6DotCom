@@ -8,7 +8,7 @@ class Footer extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <span className={s.text}>©2017 A6 Pharmaceuticals</span>
+          <span className={s.text}>©2018 A6 Pharmaceuticals</span>
           <span className={s.spacer}>|</span>
           <Link className={s.link} to="/contact">
             Contact
