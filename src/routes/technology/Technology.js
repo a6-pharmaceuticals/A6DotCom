@@ -1,21 +1,12 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 // import { Collapse } from 'react-collapse';
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Technology.css';
-import diagramUrl1 from './arf-6-diagram-1.jpg';
-import diagramUrl2 from './arf-6-diagram-2.jpg';
-import cancerDiagramUrl1 from './arf6-cancer-1.png';
-import cancerDiagramUrl2 from './arf6-cancer-2.png';
-import cancerDiagramUrl3 from './arf6-cancer-3.png';
+import diagramUrl1 from './assets/arf-6-diagram-1.jpg';
+import diagramUrl2 from './assets/arf-6-diagram-2.jpg';
+import cancerDiagramUrl1 from './assets/arf6-cancer-1.png';
+import cancerDiagramUrl2 from './assets/arf6-cancer-2.png';
+import cancerDiagramUrl3 from './assets/arf6-cancer-3.png';
 // import pdfVascularLeak from './ARF6_and_Vascular_Leak_FEB_2018.pdf';
 // import pdfCancer from './ARF6_Inhibitors_for_Cancer_FEB_2018.pdf';
 

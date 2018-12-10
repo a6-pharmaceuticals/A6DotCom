@@ -15,7 +15,6 @@ import serialize from 'serialize-javascript';
 
 class Html extends React.Component {
   static propTypes = {
-    description: PropTypes.string.isRequired,
     styles: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
@@ -33,7 +32,7 @@ class Html extends React.Component {
   };
 
   render() {
-    const { description, styles, scripts, app, children } = this.props;
+    const { styles, scripts, app, children } = this.props;
     return (
       <html
         style={{ height: '100%', width: '100%' }}
@@ -44,7 +43,10 @@ class Html extends React.Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <title>A6 Pharmaceuticals</title>
-          <meta name="description" content={description} />
+          <meta
+            name="description"
+            content="A6 Pharmaceuticals. Salt Lake City, UT"
+          />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {scripts.map(script => (
             <link key={script} rel="preload" href={script} as="script" />
