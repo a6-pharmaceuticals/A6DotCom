@@ -1,4 +1,3 @@
-// import { Collapse } from 'react-collapse';
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Technology.css';
@@ -7,8 +6,6 @@ import diagramUrl2 from './assets/arf-6-diagram-2.jpg';
 import cancerDiagramUrl1 from './assets/arf6-cancer-1.png';
 import cancerDiagramUrl2 from './assets/arf6-cancer-2.png';
 import cancerDiagramUrl3 from './assets/arf6-cancer-3.png';
-// import pdfVascularLeak from './ARF6_and_Vascular_Leak_FEB_2018.pdf';
-// import pdfCancer from './ARF6_Inhibitors_for_Cancer_FEB_2018.pdf';
 
 class Technology extends React.Component {
   // TODO: components!!!!
