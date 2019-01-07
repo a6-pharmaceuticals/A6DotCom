@@ -15,6 +15,10 @@
   flex-flow: column wrap;
 }
 
+.container b {
+  font-weight: bold;
+}
+
 .headerContainer {
   border-bottom: solid 1px #78c06b;
   display: block;
@@ -35,17 +39,40 @@
 }
 
 .subBodyText {
-  text-align: left;
   font-family: 'Hind', sans-serif;
   font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.5px;
   line-height: 20px;
+}
+
+.subBodyText p {
   margin-top: 0;
   margin-bottom: 0;
-  letter-spacing: 0.5px;
+}
+
+.subBodyText ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 15px 10px;
+}
+
+.subBodyText li {
+  padding-left: 1em;
+  text-align: left;
+  text-indent: -0.8em;
+  margin: 5px 0;
+}
+
+.subBodyText li::before {
+  font-size: 18px;
+  content: '• ';
+  color: #78c06b; /* or whatever color you prefer */
 }
 
 .captionText {
-  text-align: left;
+  text-align: justify;
   font-family: 'Hind', sans-serif;
   font-size: 14px;
   line-height: 15px;
@@ -81,25 +108,6 @@
   height: fit-content;
   margin: 20px 15px 15px;
   display: inline-block;
-}
-
-.listContainer {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin: 15px 10px;
-}
-
-.listItem {
-  padding-left: 1em;
-  text-indent: -0.8em;
-  margin: 5px 0;
-}
-
-.listItem::before {
-  font-size: 18px;
-  content: '• ';
-  color: #78c06b; /* or whatever color you prefer */
 }
 
 .header {
