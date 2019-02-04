@@ -11,11 +11,7 @@ method universally in both the client-side and server-side code bases.
 
 In order to avoid the amount of boilerplate code needed when using the raw `fetch(..)`
 function, a simple wrapper was created that provides a base URL of the data API server, credentials
-(cookies), CORS etc. For example, in a browser environment the base URL of the data API server
-might be an empty string, so when you make an Ajax request to the `/graphql` endpoint it's being
-sent to the same origin, and when the same code is executed on the server, during server-side
-rendering, it fetches data from the `http://api:8080/graphql` endpoint (`node-fetch` doesn't
-support relative URLs for obvious reasons).
+(cookies), CORS etc.
 
 Because of these subtle differences of how the `fetch` method works internally, it makes total
 sense to pass it as a `context` variable to your React application, so it can be used from either
@@ -57,4 +53,3 @@ class Post extends React.Component {
 [wfetch]: https://github.com/github/fetchno
 [nfetch]: https://github.com/bitinn/node-fetch
 [nodeapi]: https://github.com/kriasoft/nodejs-api-starter
-

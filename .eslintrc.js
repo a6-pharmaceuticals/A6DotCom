@@ -54,6 +54,8 @@ module.exports = {
     // Allow js files to use jsx syntax, too
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
 
+    'react/no-danger': 'off',
+
     // Hot module replacement does not work with stateless functional components
     'react/prefer-stateless-function': 'off',
 

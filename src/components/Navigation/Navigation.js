@@ -120,7 +120,7 @@ class Navigation extends React.Component {
         onClick={() => {
           selectLink(index);
         }}
-        onTouchStart={() => {
+        onTouchEnd={() => {
           selectLink(index);
         }}
       >

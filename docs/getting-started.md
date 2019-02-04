@@ -18,7 +18,6 @@ Before you start, take a moment to see how the project structure looks like:
 ├── /public/                    # Static files which are copied into the /build/public folder
 ├── /src/                       # The source code of the application
 │   ├── /components/            # React components
-│   ├── /data/                  # GraphQL server schema and data models
 │   ├── /routes/                # Page/screen components along with the routing information
 │   ├── /client.js              # Client-side startup script
 │   ├── /config.js              # Global application settings
@@ -49,27 +48,12 @@ commonly used Flux libraries are [Flux](http://facebook.github.io/flux/),
 
 ### Quick Start
 
-#### 1. Get the latest version
-
-You can start by cloning the latest version of React Starter Kit (RSK) on your
-local machine by running:
-
-```shell
-$ git clone -o react-starter-kit -b master --single-branch \
-      https://github.com/kriasoft/react-starter-kit.git MyApp
-$ cd MyApp
-```
-
-Alternatively, you can start a new project based on RSK right from
-[WebStorm IDE](https://www.jetbrains.com/help/webstorm/generating-a-project-from-a-framework-template.html#d88767e51),
-or by using [Yeoman generator](https://www.npmjs.com/package/generator-react-fullstack).
-
-#### 2. Run `yarn install`
+#### 1. Run `yarn install`
 
 This will install both run-time project dependencies and developer tools listed
 in [package.json](../package.json) file.
 
-#### 3. Run `yarn start`
+#### 2. Run `yarn start`
 
 This command will build the app from the source files (`/src`) into the output
 `/build` folder. As soon as the initial build completes, it will start the
@@ -78,7 +62,6 @@ with [HMR](https://webpack.github.io/docs/hot-module-replacement) on top of it.
 
 > [http://localhost:3000/](http://localhost:3000/) — Node.js server (`build/server.js`)
   with Browsersync and HMR enabled<br>
-> [http://localhost:3000/graphql](http://localhost:3000/graphql) — GraphQL server and IDE<br>
 > [http://localhost:3001/](http://localhost:3001/) — Browsersync control panel (UI)
 
 Now you can open your web app in a browser, on mobile devices and start
@@ -149,9 +132,10 @@ $ yarn run deploy
 ```
 
 The deployment script `tools/deploy.js` is configured to push the contents of
-the `/build` folder to a remote server via Git. You can easily deploy your app
-to [Azure Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/),
-or [Heroku](https://www.heroku.com/) this way. Both will execute `yarn install --production`
+the `/build` folder to a remote server via Git. A6 Pharma uses [Heroku](https://www.heroku.com/)
+to deploy our app.
+Heroku will execute `yarn install --production` once the application has been
+retrieved from GitHub. The user will need to be authenticated on [Heroku's CLI](https://devcenter.heroku.com/articles/authentication).
 upon receiving new files from you. Note, you should only deploy the contents
 of the `/build` folder to a remote server.
 

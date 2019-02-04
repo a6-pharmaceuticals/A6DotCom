@@ -13,7 +13,7 @@ import People from './People';
 
 function action() {
   return {
-    chunks: ['about'],
+    chunks: ['people'],
     title: 'People',
     component: (
       <Layout>
