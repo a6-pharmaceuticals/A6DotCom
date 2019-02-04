@@ -1,13 +1,15 @@
 import React from 'react';
 import Cosmic from 'cosmicjs';
-
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import withErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary';
 import s from './Home.css';
 
 class Home extends React.Component {
   constructor() {
     super();
-    this.state = { content: {} };
+    this.state = { content: {}, cosmicError: false, isLoading: true };
   }
 
   componentDidMount() {
@@ -19,20 +21,28 @@ class Home extends React.Component {
         slug: 'home-page',
       })
       .then(res => {
-        this.setState({ content: res.object.metadata });
-      });
+        this.setState({ content: res.object.metadata, isLoading: false });
+      })
+      .catch(() => this.setState({ cosmicError: true, isLoading: false }));
   }
 
   render() {
-    // TODO: get rid of body_text metadata field in Cosmic for this page
+    if (this.state.cosmicError) throw new Error('Cosmic fetch failed!');
+
+    if (this.state.isLoading || !this.state.content) {
+      return (
+        <div className={s.container}>
+          <LoadingSpinner />
+        </div>
+      );
+    }
+
     const {
       body_text_plain: bodyTextPlain,
       header_text: headerText,
       image_1: image1,
       image_2: image2,
     } = this.state.content;
-
-    if (!bodyTextPlain) return null;
 
     return (
       <div className={s.root}>
@@ -61,4 +71,4 @@ class Home extends React.Component {
   }
 }
 
-export default withStyles(s)(Home);
+export default withErrorBoundary(withStyles(s)(Home));

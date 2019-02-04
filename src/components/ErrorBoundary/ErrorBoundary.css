@@ -1,0 +1,23 @@
+@import '../variables.css';
+
+.container {
+  text-align: center;
+  margin: 20px auto 0;
+  padding: 0 20px 95px;
+  max-width: var(--max-content-width);
+}
+
+.content {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.title {
+  font-size: 26px;
+  margin: 75px auto 15px;
+}
+
+.title,
+.content {
+  font-family: 'AileronRegular', sans-serif;
+}

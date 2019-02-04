@@ -1,7 +1,9 @@
 import React from 'react';
 import Cosmic from 'cosmicjs';
-
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import withErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary';
 import s from './Technology.css';
 
 class Technology extends React.Component {
@@ -11,6 +13,8 @@ class Technology extends React.Component {
     this.state = {
       cancerBodyText: null,
       cancerImages: null,
+      cosmicError: false,
+      isLoading: true,
       vascularLeakBodyText: null,
       vascularLeakImages: null,
     };
@@ -33,8 +37,10 @@ class Technology extends React.Component {
           vascularLeakImages: res.objects[1].metadata,
           cancerBodyText: res.objects[2].metadata,
           cancerImages: res.objects[3].metadata,
+          isLoading: false,
         });
-      });
+      })
+      .catch(() => this.setState({ cosmicError: true, isLoading: false }));
   }
 
   render() {
@@ -45,8 +51,21 @@ class Technology extends React.Component {
       vascularLeakImages,
     } = this.state;
 
-    // TODO: loading and error state
-    if (!vascularLeakBodyText || !vascularLeakImages) return null;
+    if (this.state.cosmicError) throw new Error('Cosmic fetch failed!');
+
+    if (
+      this.state.isLoading ||
+      (!cancerBodyText &&
+        !cancerImages &&
+        !vascularLeakBodyText &&
+        !vascularLeakImages)
+    ) {
+      return (
+        <div className={s.container}>
+          <LoadingSpinner />
+        </div>
+      );
+    }
 
     const aliGraphContainerStyles = {
       display: 'flex',
@@ -203,4 +222,4 @@ class Technology extends React.Component {
   }
 }
 
-export default withStyles(s)(Technology);
+export default withErrorBoundary(withStyles(s)(Technology));

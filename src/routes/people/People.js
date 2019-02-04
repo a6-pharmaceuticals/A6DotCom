@@ -1,64 +1,109 @@
 import React from 'react';
+import Cosmic from 'cosmicjs';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { peopleInfo, advisorInfo } from './constants';
+
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import withErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary';
 import s from './People.css';
-import alanPicUrl from './assets/alan_mgmt.jpg';
-import danielPicUrl from './assets/daniel_mgmt.jpg';
-import davePicUrl from './assets/dave_mgmt.jpg';
-import hunterPicUrl from './assets/hunter_mgmt.jpg';
 
-const getPhoto = index => {
-  switch (index) {
-    case 0:
-      return hunterPicUrl;
-    case 1:
-      return davePicUrl;
-    case 2:
-      return alanPicUrl;
-    case 3:
-      return danielPicUrl;
-    default:
-      return null;
+class People extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      advisorSections: null,
+      cosmicError: false,
+      isLoading: true,
+      managerSections: null,
+    };
   }
-};
 
-const People = () => (
-  <div className={s.root}>
-    <div className={s.container}>
-      <h2 className={s.subTitle}>Management</h2>
-      {peopleInfo.map((person, index) => (
-        <div className={s.personContainer}>
-          <img
-            className={s.personImage}
-            src={getPhoto(index)}
-            alt={person.imgAlt}
-          />
-          <div className={s.personTextContainer}>
-            <h3 className={s.personName}>{person.name}</h3>
-            <h4 className={s.personTitle}>{person.title}</h4>
-            {person.paragraphs.map(paragraph => (
-              <span className={s.bodyText}>
-                {paragraph}
-                <br />
-              </span>
-            ))}
-          </div>
-        </div>
-      ))}
-      <h2 className={s.subTitle}>Advisors</h2>
-      {advisorInfo.map(advisor => (
-        <div className={s.advisorContainer}>
-          <h3 className={s.advisorName}>{advisor.name}</h3>
-          {advisor.paragraphs.map(paragraph => (
-            <span className={s.bodyText}>
-              {paragraph}
-              <br />
-            </span>
-          ))}
-        </div>
-      ))}
-    </div>
-  </div>
-);
+  componentDidMount() {
+    // retrieve content from CMS (Cosmicjs)
+    const api = Cosmic();
+    const bucket = api.bucket({ slug: 'a6-pharmaceuticals' });
 
-export default withStyles(s)(People);
+    // NOTE: the order of the content objects in the res.objects array
+    // will stay consistent on the Cosmicjs side
+    const managerPromise = bucket
+      .getObjects({
+        type: 'people-page-manager-sections',
+      })
+      .then(res => res.objects)
+      .catch(() => {
+        throw new Error('CMS fetch for manager sections failed!');
+      });
+    const advisorPromise = bucket
+      .getObjects({
+        type: 'people-page-advisor-sections',
+      })
+      .then(res => res.objects)
+      .catch(() => {
+        throw new Error('CMS fetch for advisor sections failed!');
+      });
+
+    // TODO: get rid of throwExpression lint error
+    Promise.all([managerPromise, advisorPromise])
+      .then(values => {
+        this.setState({
+          advisorSections: values[1],
+          managerSections: values[0],
+          isLoading: false,
+        });
+      })
+      .catch(() => this.setState({ cosmicError: true, isLoading: false }));
+  }
+
+  render() {
+    const { advisorSections, managerSections } = this.state;
+
+    if (this.state.cosmicError) throw new Error('Cosmic fetch failed!');
+    if (this.state.isLoading || !advisorSections || !managerSections) {
+      return (
+        <div className={s.container}>
+          <LoadingSpinner />
+        </div>
+      );
+    }
+
+    return (
+      <div className={s.root}>
+        <div className={s.container}>
+          <h2 className={s.subTitle}>Management</h2>
+          {managerSections.map(managerObject => {
+            const { bio, name, photo, title } = managerObject.metadata;
+
+            return (
+              <div className={s.personContainer}>
+                <img alt={name} className={s.personImage} src={photo.url} />
+                <div className={s.personTextContainer}>
+                  <h3 className={s.personName}>{name}</h3>
+                  <h4 className={s.personTitle}>{title}</h4>
+                  <div
+                    className={s.bodyText}
+                    dangerouslySetInnerHTML={{ __html: bio }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+          <h2 className={s.subTitle}>Advisors</h2>
+          {advisorSections.map(advisorObject => {
+            const { bio, name } = advisorObject.metadata;
+
+            return (
+              <div className={s.advisorContainer}>
+                <h3 className={s.advisorName}>{name}</h3>
+                <div
+                  className={s.bodyText}
+                  dangerouslySetInnerHTML={{ __html: bio }}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+}
+
+export default withErrorBoundary(withStyles(s)(People));
