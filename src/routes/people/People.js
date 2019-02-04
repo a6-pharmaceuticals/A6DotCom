@@ -1,5 +1,6 @@
 import React from 'react';
 import Cosmic from 'cosmicjs';
+import LazyLoad from 'react-lazyload';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
@@ -74,7 +75,9 @@ class People extends React.Component {
 
             return (
               <div className={s.personContainer}>
-                <img alt={name} className={s.personImage} src={photo.url} />
+                <LazyLoad height="100%" once>
+                  <img alt={name} className={s.personImage} src={photo.url} />
+                </LazyLoad>
                 <div className={s.personTextContainer}>
                   <h3 className={s.personName}>{name}</h3>
                   <h4 className={s.personTitle}>{title}</h4>

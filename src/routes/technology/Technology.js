@@ -1,5 +1,6 @@
 import React from 'react';
 import Cosmic from 'cosmicjs';
+import LazyLoad from 'react-lazyload';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
@@ -88,12 +89,14 @@ class Technology extends React.Component {
               }}
             />
             <div className={s.diagramContainer}>
-              <img
-                className={s.diagram}
-                src={vascularLeakImages.image_1.url}
-                alt="ARF6 diagram 1"
-                style={{ boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)' }}
-              />
+              <LazyLoad height="100%" once>
+                <img
+                  className={s.diagram}
+                  src={vascularLeakImages.image_1.url}
+                  alt="ARF6 diagram 1"
+                  style={{ boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)' }}
+                />
+              </LazyLoad>
               <div
                 className={s.captionText}
                 dangerouslySetInnerHTML={{
@@ -108,16 +111,18 @@ class Technology extends React.Component {
               }}
             />
             <div style={aliGraphContainerStyles} className={s.diagramContainer}>
-              <img
-                className={s.diagram}
-                src={vascularLeakImages.image_2.url}
-                alt="ARF6 diagram 2"
-                style={{
-                  maxHeight: '375px',
-                  minHeight: '285px',
-                  boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)',
-                }}
-              />
+              <LazyLoad height="100%" once>
+                <img
+                  className={s.diagram}
+                  src={vascularLeakImages.image_2.url}
+                  alt="ARF6 diagram 2"
+                  style={{
+                    maxHeight: '375px',
+                    minHeight: '285px',
+                    boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.5)',
+                  }}
+                />
+              </LazyLoad>
               <div
                 className={s.captionText}
                 dangerouslySetInnerHTML={{
@@ -145,11 +150,13 @@ class Technology extends React.Component {
               }}
             />
             <div className={s.diagramCancerContainer}>
-              <img
-                className={s.cancerDiagram}
-                src={cancerImages.image_1.url}
-                alt="ARF6 and cancer 1"
-              />
+              <LazyLoad height="100%" once>
+                <img
+                  className={s.cancerDiagram}
+                  src={cancerImages.image_1.url}
+                  alt="ARF6 and cancer 1"
+                />
+              </LazyLoad>
               <div
                 className={s.captionText}
                 dangerouslySetInnerHTML={{
@@ -161,11 +168,13 @@ class Technology extends React.Component {
               style={{ maxWidth: '725px' }}
               className={s.diagramCancerContainer}
             >
-              <img
-                className={s.cancerDiagram}
-                src={cancerImages.image_2.url}
-                alt="ARF6 and cancer 2"
-              />
+              <LazyLoad height="100%" once>
+                <img
+                  className={s.cancerDiagram}
+                  src={cancerImages.image_2.url}
+                  alt="ARF6 and cancer 2"
+                />
+              </LazyLoad>
               <div
                 className={s.captionText}
                 dangerouslySetInnerHTML={{
@@ -195,11 +204,13 @@ class Technology extends React.Component {
               style={{ maxWidth: '675px' }}
               className={s.diagramCancerContainer}
             >
-              <img
-                className={s.cancerDiagram}
-                src={cancerImages.image_3.url}
-                alt="ARF6 and cancer 3"
-              />
+              <LazyLoad height="100%" once>
+                <img
+                  className={s.cancerDiagram}
+                  src={cancerImages.image_3.url}
+                  alt="ARF6 and cancer 3"
+                />
+              </LazyLoad>
               <div
                 className={s.captionText}
                 dangerouslySetInnerHTML={{
